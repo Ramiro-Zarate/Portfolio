@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 export function Header() {
     return (
-        <header>
+        <header className={styles.header}>
             <div className={styles.headerContainer}>
                 <h1>Ramiro Zarate</h1>
                 <nav className={styles.nav}>

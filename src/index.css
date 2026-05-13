@@ -3,6 +3,7 @@
   --secondary-color: #8a9a5b;
   --bg-color: #f5f5dc;
   --text-color: #333333;
+  --text-muted: #5c5c52;
 
   --primary-dark: #b14e3b;     
   --primary-light: #edaa9a;    
@@ -23,7 +24,7 @@
   --font-size-md: 1.25rem;     
   --font-size-lg: 1.5rem;      
   --font-size-xl: 2rem;       
-  --font-size-xxl: 3rem;       
+  --font-size-xxl: 4rem;       
   
 
   --line-height-body: 1.6;
