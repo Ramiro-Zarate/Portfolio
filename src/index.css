@@ -17,7 +17,14 @@
   --bg-section-sage: #eef2e6;  
   
 
-  --accent-color: #d4a373;     
+  --accent-color: #d4a373;
+
+  --card-bg-1: #e8d4c4;
+  --card-bg-2: #d4d8b8;
+  --card-bg-3: #c9d4c4;
+  --card-bg-4: #e0c9b8;
+  --card-bg-5: #d4dcc9;
+  --card-bg-6: #c9c4b8;     
 
   --font-size-base: 1rem;       
   --font-size-sm: 0.875rem;    

@@ -1,0 +1,48 @@
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var( --bg-section-alt);
+    padding-block: 4rem;
+}
+
+.tecnologiasContent{
+    width: 90%; 
+    max-width: 1140px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+}
+
+.tecnologiasTitle{
+    text-align: center;
+    font-size: var(--font-size-xl);
+}
+
+.techList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 4fr));
+    gap: 24px;
+
+}
+
+.techCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: var(--card-bg-1);
+}
+
+.techCard:nth-child(2){ background-color: var(--card-bg-2); }
+.techCard:nth-child(3){ background-color: var(--card-bg-3); }
+.techCard:nth-child(4){ background-color: var(--card-bg-4); }
+.techCard:nth-child(5){ background-color: var(--card-bg-5); }
+.techCard:nth-child(6){ background-color: var(--card-bg-6); }
+.techCard:nth-child(7){ background-color: var(--card-bg-1); }
+.techCard:nth-child(8){ background-color: var(--card-bg-2); }
+.techCard:nth-child(9){ background-color: var(--card-bg-3); }
+.techCard:nth-child(10){ background-color: var(--card-bg-4); }
+.techCard:nth-child(11){ background-color: var(--card-bg-5); }
+.techCard:nth-child(12){ background-color: var(--card-bg-6); }
