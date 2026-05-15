@@ -4,6 +4,7 @@ import { Header } from './components/Header'
 import { Hero } from './sections/Hero'
 import { Tecnologias } from './sections/Tecnologias'
 import { Proyectos } from './sections/Proyectos'
+import { Contacto } from './sections/Contacto'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Tecnologias />
         <Proyectos />
+        <Contacto />
       </BrowserRouter>
     </>
   )

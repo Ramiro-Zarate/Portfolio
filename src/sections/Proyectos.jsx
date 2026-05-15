@@ -42,7 +42,7 @@ const proyectosPersonales = [
         id: 4,
         titulo: 'DevJobs',
         descripcion: 'Buscador de empleos con filtros avanzados por ubicación, experiencia y tecnología. API REST propia.',
-        tags: ['React', 'Express', 'React Router', 'Zustand'],
+        tags: ['React', 'Express', 'React Router', 'Zustand', ],
         link: 'https://github.com/Ramiro-Zarate/Dev-Jobs-React',
         imagenes: [devjobs1, devjobs2, devjobs3]
     },
@@ -50,7 +50,7 @@ const proyectosPersonales = [
         id: 5,
         titulo: 'To Do List (Challenge Forti)',
         descripcion: 'Challenge de programación con lista de tareas. Stack completo React + Express.',
-        tags: ['React', 'Express'],
+        tags: ['React', 'Node', 'Express'],
         link: 'https://github.com/Ramiro-Zarate/Challenge-ForIT',
         imagenes: [challenge1, challenge2]
     },

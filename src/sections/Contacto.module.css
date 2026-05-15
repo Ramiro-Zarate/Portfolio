@@ -1,0 +1,74 @@
+.contacto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var( --bg-section-alt);
+    padding-block: 4rem;
+}
+
+.contactContainer{
+    width: 90%; 
+    max-width: 1140px; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionTitle{
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    margin-bottom: 2rem;
+}
+
+.contactLinks {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    position: relative; 
+
+}
+
+.contactLinks a {
+    color: var(--text-color);
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.contactLinks a:hover {
+    transform: scale(1.1);
+}
+
+.emailContainer {
+    cursor: pointer;
+    position: relative; /* Clave para el badge */
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+    color: var(--text-color);
+}
+
+.emailContainer:hover {
+    transform: scale(1.1);
+}
+
+.copiado {
+    position: absolute;
+    top: -40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--text-color);
+    color: var(--card-bg-1);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+    pointer-events: none; 
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translate(-50%, 10px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
+}
