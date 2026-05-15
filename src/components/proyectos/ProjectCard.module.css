@@ -1,15 +1,12 @@
 .card {
-    background: var(--card-bg-1);
+    background: var(--card-bg-5);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    border-bottom: 3px solid transparent;
-    border-right: 3px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-    border-bottom-color: var(--text-color);
-    border-right-color: var(--text-color);
+    cursor: pointer;
 }
 
 .cardImage {
@@ -33,17 +30,62 @@
 
 .cardContent {
     padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardTitle {
+    font-size: var(--font-size-lg);
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 600;
+}
+
+.cardDescription {
     font-size: var(--font-size-md);
+    color: var(--text-muted);
+    margin: 0.5rem 0 0 0;
+    line-height: var(--line-height-body);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0 0 0;
+}
+
+.tag {
+    font-size: var(--font-size-sm);
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.75rem;
+    font-weight: 500;
+}
+
+.linkButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--bg-color);
+    background: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s ease;
+    margin: 0.5rem 0 0 0;
+}
+
+.cardTitle {
+    font-size: var(--font-size-lg);
     color: var(--text-color);
     margin: 0 0 0.5rem 0;
     font-weight: 600;
 }
 
 .cardDescription {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     color: var(--text-muted);
     margin: 0 0 1rem 0;
     line-height: var(--line-height-body);
@@ -59,7 +101,7 @@
 .tag {
     font-size: var(--font-size-sm);
     color: var(--text-color);
-    background-color: var(--card-bg-3);
+    background-color: var(--primary-color);
     padding: 0.25rem 0.75rem;
     font-weight: 500;
 }
@@ -70,7 +112,7 @@
     gap: 0.5rem;
     font-size: var(--font-size-sm);
     color: var(--bg-color);
-    background: var(--primary-color);
+    background: var(--secondary-color);
     padding: 0.5rem 1rem;
     text-decoration: none;
     font-weight: 500;
