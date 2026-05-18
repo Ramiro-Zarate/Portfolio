@@ -7,6 +7,7 @@ import devjobs3 from '../assets/proyectos/devjobs3.png'
 import challenge1 from '../assets/proyectos/challenge1.png'
 import challenge2 from '../assets/proyectos/challenge2.png'
 import estudioSZ1 from '../assets/proyectos/estudioSZ1.png'
+import automatizacion1 from '../assets/proyectos/automatizacion1.png' 
 import proximamente from '../assets/proyectos/proximamente.png'
 
 
@@ -22,10 +23,10 @@ const proyectosClientes = [
     {
         id: 2,
         titulo: 'Automatización - Estudio Contable SZ',
-        descripcion: 'Solución de software personalizada para la automatización de tareas administrativas y fiscales, eliminando procesos manuales repetitivos. Integración con APIs de ARCA usando librerías Playwright y Pandas.',
-        tags: ['Python', 'Playwright', 'Pandas'],
+        descripcion: 'Solución de software personalizada para la automatización de tareas administrativas y fiscales, eliminando procesos manuales repetitivos. Integración con APIs de ARCA usando librerías Playwright y Pandas. Interfaz gráfica con CustomTkinter.',
+        tags: ['Python', 'Playwright', 'Pandas', 'CustomTkinter'],
         link: null,
-        imagen: '/src/assets/proyectos/sz-automatizacion.jpg'
+        imagen: [automatizacion1]
     },
     {
         id: 3,
@@ -58,7 +59,7 @@ const proyectosPersonales = [
         id: 6,
         titulo: 'Telemetría F1 Colapinto (En desarrollo)',
         descripcion: 'Herramienta de análisis de datos en tiempo real diseñada para procesar y visualizar la telemetría oficial de Fórmula 1, con foco específico en el desempeño de Franco Colapinto. Integración con APIs de telemetría para la extracción de métricas de velocidad, marchas, uso de batería y tiempos de vuelta. Desarrollo de un dashboard interactivo utilizando React para la visualización de datos, con gráficos dinámicos y filtros personalizables para el análisis detallado del rendimiento del piloto.',
-        tags: ['Python', 'Pandas', 'OpenF1(API)', 'React'],
+        tags: ['Python', 'Pandas', 'React'],
         link: 'https://github.com',
         imagen: [proximamente]
     }
