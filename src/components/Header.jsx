@@ -1,5 +1,4 @@
 import styles from './Header.module.css'
-import { Link } from 'react-router'
 
 export function Header() {
     return (
@@ -7,12 +6,12 @@ export function Header() {
             <div className={styles.headerContainer}>
                 <h1>Ramiro Zarate</h1>
                 <nav className={styles.nav}>
-                    <Link className={styles.link} to="/">Inicio</Link>
-                    <Link className={styles.link} to="/tech">Tecnologias</Link>
-                    <Link className={styles.link} to="/projects">Proyectos</Link>
-                    <Link className={styles.link} to="/contact">Contacto</Link>
+                    <a className={styles.link} href="#inicio">Inicio</a>
+                    <a className={styles.link} href="#tecnologias">Tecnologias</a>
+                    <a className={styles.link} href="#proyectos">Proyectos</a>
+                    <a className={styles.link} href="#contact">Contacto</a>
                 </nav>
-                <button className={styles.downloadBtn}>Descargar CV</button>
+                <a href="/CV_RamiroZarate.pdf" download className={styles.downloadBtn}>Descargar CV</a>
             </div>
         </header>
     )

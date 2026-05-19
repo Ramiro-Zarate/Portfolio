@@ -83,7 +83,7 @@ export function Proyectos() {
     }
 
     return (
-        <section className={styles.proyectos}>
+        <section id="proyectos" className={styles.proyectos}>
             <h2 className={styles.sectionTitle}>Proyectos</h2>
 
             <div className={styles.projectGroup}>

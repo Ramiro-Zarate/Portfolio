@@ -75,7 +75,7 @@ const tecnologias = [
 
 export function Tecnologias() {
     return (
-        <section className={styles.tecnologias}>
+        <section id="tecnologias" className={styles.tecnologias}>
             <div className={styles.tecnologiasContent}>
                 <h2 className={styles.tecnologiasTitle}>Tecnologías</h2>
                 <div className={styles.techList}>

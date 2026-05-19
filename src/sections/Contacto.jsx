@@ -13,7 +13,7 @@ export function Contacto() {
     }
 
     return (
-        <section className={styles.contacto}>
+        <section id="contact" className={styles.contacto}>
             <div className={styles.contactContainer}>
                 <h2 className={styles.sectionTitle}>Contacto</h2>
                 <div className={styles.contactLinks}>
