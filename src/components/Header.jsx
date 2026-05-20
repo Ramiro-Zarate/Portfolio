@@ -10,6 +10,7 @@ export function Header() {
                 <h1>Ramiro Zarate</h1>
                 <nav className={styles.nav}>
                     <a className={styles.link} href="#inicio">{t('nav.inicio')}</a>
+                    <a className={styles.link} href="#about">{t('nav.sobreMi')}</a>
                     <a className={styles.link} href="#tecnologias">{t('nav.tecnologias')}</a>
                     <a className={styles.link} href="#proyectos">{t('nav.proyectos')}</a>
                     <a className={styles.link} href="#contact">{t('nav.contacto')}</a>
