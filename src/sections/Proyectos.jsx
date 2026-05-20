@@ -122,46 +122,48 @@ export function Proyectos() {
 
     return (
         <section id="proyectos" className={styles.proyectos}>
-            <h2 className={styles.sectionTitle}>{t('proyectos.title')}</h2>
-
-            <div className={styles.projectGroup}>
-                <h3 className={styles.groupTitle}>{t('proyectos.paraClientes')}</h3>
-                <div className={styles.grid}>
-                    {proyectosClientes.map((proyecto) => (
-                        <ProjectCard
-                            key={proyecto.id}
-                            proyecto={proyecto}
-                            language={language}
-                            onImageClick={handleImageClick}
-                            t={t}
-                        />
-                    ))}
+            <div className={styles.sectionProyectos}>
+                <h2 className={styles.sectionTitle}>{t('proyectos.title')}</h2>
+                <div className={styles.projectGroup}>
+                    <h3 className={styles.groupTitle}>{t('proyectos.paraClientes')}</h3>
+                    <div className={styles.grid}>
+                        {proyectosClientes.map((proyecto) => (
+                            <ProjectCard
+                                key={proyecto.id}
+                                proyecto={proyecto}
+                                language={language}
+                                onImageClick={handleImageClick}
+                                t={t}
+                            />
+                        ))}
+                    </div>
                 </div>
-            </div>
 
-            <div className={styles.projectGroup}>
-                <h3 className={styles.groupTitle}>{t('proyectos.personales')}</h3>
-                <div className={styles.grid}>
-                    {proyectosPersonales.map((proyecto) => (
-                        <ProjectCard
-                            key={proyecto.id}
-                            proyecto={proyecto}
-                            language={language}
-                            onImageClick={handleImageClick}
-                            t={t}
-                        />
-                    ))}
+                <div className={styles.projectGroup}>
+                    <h3 className={styles.groupTitle}>{t('proyectos.personales')}</h3>
+                    <div className={styles.grid}>
+                        {proyectosPersonales.map((proyecto) => (
+                            <ProjectCard
+                                key={proyecto.id}
+                                proyecto={proyecto}
+                                language={language}
+                                onImageClick={handleImageClick}
+                                t={t}
+                            />
+                        ))}
+                    </div>
                 </div>
-            </div>
 
-            {modalData.imagenes.length > 0 && (
-                <ImageModalCarousel
-                    imagenes={modalData.imagenes}
-                    titulo={modalData.titulo}
-                    initialIndex={modalData.index}
-                    onClose={handleCloseModal}
-                />
-            )}
+                {modalData.imagenes.length > 0 && (
+                    <ImageModalCarousel
+                        imagenes={modalData.imagenes}
+                        titulo={modalData.titulo}
+                        initialIndex={modalData.index}
+                        onClose={handleCloseModal}
+                    />
+                )}
+            </div>
+            
         </section>
     )
 }
