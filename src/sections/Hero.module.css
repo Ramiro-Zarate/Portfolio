@@ -52,6 +52,11 @@
     display: inline-block;
     padding: 10px 20px;
     font-size: var(--font-size-md);
+    transition: all .3s ease;
+}
+
+.downloadBtn:hover{
+    transform: scale(1.03) translateY(2px) translateX(2px);
 }
 
 .contactButton{
@@ -62,4 +67,9 @@
     display: inline-block;
     padding: 10px 20px;
     font-size: var(--font-size-md);
+    transition: all .3s ease;
+}
+
+.contactButton:hover{
+    transform: scale(1.03) translateY(2px) translateX(2px);
 }

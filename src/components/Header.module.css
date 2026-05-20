@@ -2,6 +2,8 @@
     width: 100%; 
     background-color: var(--bg-section-alt); 
     position: sticky;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     top: 0;
     z-index: 1000;
 }
@@ -29,14 +31,22 @@
     transition: color 0.3s ease;
 }
 
+.link:hover{
+    color: var(--primary-color);
+}
+
 .downloadBtn{
     padding: 10px 20px;
     background-color: var(--primary-color);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     text-decoration: none;
     color: var(--text-color);
     display: inline-block;
+}
+
+.downloadBtn:hover{
+    transform: scale(1.03) translateY(2px);
 }
 
 .actions{
