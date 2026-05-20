@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './Proyectos.module.css'
-import { Carousel, ImageModalCarousel, ProjectCard } from '../components/proyectos'
+import { ImageModalCarousel, ProjectCard } from '../components/proyectos'
+import { useLanguage } from '../i18n/useLanguage.js'
 import devjobs1 from '../assets/proyectos/devjobs1.png'
 import devjobs2 from '../assets/proyectos/devjobs2.png'
 import devjobs3 from '../assets/proyectos/devjobs3.png'
@@ -66,6 +67,7 @@ const proyectosPersonales = [
 ]
 
 export function Proyectos() {
+    const { t } = useLanguage()
     const [modalData, setModalData] = useState({ imagenes: [], index: 0, titulo: '' })
 
     const handleImageClick = (imagenes, index) => {
@@ -84,10 +86,10 @@ export function Proyectos() {
 
     return (
         <section id="proyectos" className={styles.proyectos}>
-            <h2 className={styles.sectionTitle}>Proyectos</h2>
+            <h2 className={styles.sectionTitle}>{t('proyectos.title')}</h2>
 
             <div className={styles.projectGroup}>
-                <h3 className={styles.groupTitle}>Para clientes</h3>
+                <h3 className={styles.groupTitle}>{t('proyectos.paraClientes')}</h3>
                 <div className={styles.grid}>
                     {proyectosClientes.map((proyecto) => (
                         <ProjectCard
@@ -100,7 +102,7 @@ export function Proyectos() {
             </div>
 
             <div className={styles.projectGroup}>
-                <h3 className={styles.groupTitle}>Proyectos personales</h3>
+                <h3 className={styles.groupTitle}>{t('proyectos.personales')}</h3>
                 <div className={styles.grid}>
                     {proyectosPersonales.map((proyecto) => (
                         <ProjectCard

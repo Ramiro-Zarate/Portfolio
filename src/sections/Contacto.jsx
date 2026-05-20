@@ -1,7 +1,9 @@
 import {useState} from 'react'
 import styles from './Contacto.module.css'
+import { useLanguage } from '../i18n/useLanguage.js'
 
 export function Contacto() {
+    const { t } = useLanguage()
     const [copiado, setCopiado] = useState(false)
     const email = 'ramazara13@gmail.com'
 
@@ -15,7 +17,7 @@ export function Contacto() {
     return (
         <section id="contact" className={styles.contacto}>
             <div className={styles.contactContainer}>
-                <h2 className={styles.sectionTitle}>Contacto</h2>
+                <h2 className={styles.sectionTitle}>{t('contacto.title')}</h2>
                 <div className={styles.contactLinks}>
                     <a href="https://www.linkedin.com/in/ramiro-zarate/" target='_blank' rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" /></svg>
@@ -29,7 +31,7 @@ export function Contacto() {
                         title="Copiar email"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" /><path d="M3 7l9 6l9 -6" /></svg>
-                        {copiado && <span className={styles.copiado}>¡Email copiado!</span>}
+                        {copiado && <span className={styles.copiado}>{t('contacto.emailCopiado')}</span>}
                     </div>
                     
                 </div>

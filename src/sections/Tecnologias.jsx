@@ -1,4 +1,5 @@
 import styles from './Tecnologias.module.css'
+import { useLanguage } from '../i18n/useLanguage.js'
 
 const tecnologias = [
     {
@@ -74,15 +75,17 @@ const tecnologias = [
 ]
 
 export function Tecnologias() {
+    const { t } = useLanguage()
+
     return (
         <section id="tecnologias" className={styles.tecnologias}>
             <div className={styles.tecnologiasContent}>
-                <h2 className={styles.tecnologiasTitle}>Tecnologías</h2>
+                <h2 className={styles.tecnologiasTitle}>{t('tecnologias.title')}</h2>
                 <div className={styles.techList}>
-                    {tecnologias.map((t) => (
-                        <article key={t.titulo} className={styles.techCard}>
-                            <div className={styles.techIcon}>{t.icono}</div>  
-                            <h3 className={styles.techTitle}>{t.titulo}</h3>  
+                    {tecnologias.map((tech) => (
+                        <article key={tech.titulo} className={styles.techCard}>
+                            <div className={styles.techIcon}>{tech.icono}</div>  
+                            <h3 className={styles.techTitle}>{tech.titulo}</h3>  
                         </article>
                     ))}
                 </div>

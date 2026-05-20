@@ -38,3 +38,43 @@
     color: var(--text-color);
     display: inline-block;
 }
+
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.langToggle{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.langOption{
+    padding: 4px 8px;
+    transition: all 0.3s ease;
+}
+
+.langOption:hover{
+    opacity: 1;
+}
+
+.separator{
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.active{
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.inactive{
+    opacity: 0.5;
+}
+
+.active:hover, .inactive:hover{
+    opacity: 1;
+}
