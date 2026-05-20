@@ -1,8 +1,10 @@
 import { Carousel } from './Carousel'
 import styles from './ProjectCard.module.css'
 
-export function ProjectCard({ proyecto, onImageClick }) {
+export function ProjectCard({ proyecto, language, onImageClick, t }) {
     const hasMultipleImages = proyecto.imagenes && proyecto.imagenes.length > 0
+    const titulo = proyecto.titulo[language] || proyecto.titulo.es
+    const descripcion = proyecto.descripcion[language] || proyecto.descripcion.es
 
     const handleClick = (imagen, index) => {
         onImageClick(proyecto.imagenes || [proyecto.imagen], index)
@@ -14,21 +16,21 @@ export function ProjectCard({ proyecto, onImageClick }) {
                 {hasMultipleImages ? (
                     <Carousel
                         imagenes={proyecto.imagenes}
-                        titulo={proyecto.titulo}
+                        titulo={titulo}
                         onImageClick={handleClick}
                     />
                 ) : (
                     <img
                         src={proyecto.imagen}
-                        alt={proyecto.titulo}
+                        alt={titulo}
                         loading="lazy"
                         onClick={() => onImageClick([proyecto.imagen], 0)}
                     />
                 )}
             </div>
             <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>{proyecto.titulo}</h3>
-                <p className={styles.cardDescription}>{proyecto.descripcion}</p>
+                <h3 className={styles.cardTitle}>{titulo}</h3>
+                <p className={styles.cardDescription}>{descripcion}</p>
                 <div className={styles.tags}>
                     {proyecto.tags.map((tag) => (
                         <span key={tag} className={styles.tag}>{tag}</span>
@@ -41,7 +43,7 @@ export function ProjectCard({ proyecto, onImageClick }) {
                         rel="noopener noreferrer"
                         className={styles.linkButton}
                     >
-                        Ver proyecto
+                        {t ? t('proyectos.verProyecto') : 'Ver proyecto'}
                     </a>
                 )}
             </div>
