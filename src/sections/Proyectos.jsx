@@ -51,7 +51,7 @@ const proyectosClientes = [
             es: 'Tienda online escalable para la comercialización de indumentaria deportiva, con foco en una experiencia de compra fluida. Desarrollo de un catálogo dinámico y gestión de base de datos para control de stock en tiempo real. Actualmente en fase de integración de pasarela de pagos.',
             en: 'Scalable online store for sportswear commercialization, focused on a smooth shopping experience. Dynamic catalog development and database management for real-time stock control. Currently in the payment gateway integration phase.'
         },
-        tags: ['React', 'Node', 'Express', 'SQLite'],
+        tags: ['React', 'Node', 'TypeScript', 'PostgreSQL'],
         link: null,
         imagen: [proximamente]
     }
