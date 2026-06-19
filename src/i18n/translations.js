@@ -15,7 +15,8 @@ const es = {
         "title": "Fullstack Developer",
         "description": "Estudiante de Sistemas UNLa (Universidad Nacional de Lanús) enfocado en el desarrollo web moderno y escalable.",
         "downloadCV": "Descargar CV",
-        "contact": "Contactame"
+        "contact": "Contactame",
+        "badge": "Disponible para proyectos"
     },
     "about": {
         "title": "Sobre mi",
@@ -60,7 +61,8 @@ const en = {
         "title": "Fullstack Developer",
         "description": "Systems student at UNLa (Universidad Nacional de Lanús) focused on modern and scalable web development.",
         "downloadCV": "Download CV",
-        "contact": "Contact me"
+        "contact": "Contact me",
+        "badge": "Available for work"
     },
     "about": {
         "title": "About me",

@@ -1,0 +1,87 @@
+.codeWindow {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    background: #2a2a26;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 540px;
+    width: 100%;
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+    transform: rotate(1deg);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.codeWindow:hover {
+    transform: rotate(0deg) translateY(-4px);
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.codeHeader {
+    background: #1f1f1c;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid #3a3a35;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dotRed {
+    background: #ff5f56;
+}
+
+.dotYellow {
+    background: #ffbd2e;
+}
+
+.dotGreen {
+    background: #27c93f;
+}
+
+.codeTitle {
+    margin-left: auto;
+    margin-right: auto;
+    color: #8a8a7a;
+    font-size: 0.8rem;
+    user-select: none;
+}
+
+.codeBody {
+    margin: 0;
+    padding: 1.5rem;
+    color: #d4d4c8;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+.comment {
+    color: #6b6b5e;
+    font-style: italic;
+}
+
+.keyword {
+    color: #e2725b;
+}
+
+.variable {
+    color: #8a9a5b;
+}
+
+.string {
+    color: #b4bf9a;
+}
+
+.boolean {
+    color: #d4a373;
+}
