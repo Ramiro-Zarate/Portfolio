@@ -36,15 +36,29 @@ export function ProjectCard({ proyecto, language, onImageClick, t }) {
                         <span key={tag} className={styles.tag}>{tag}</span>
                     ))}
                 </div>
-                {proyecto.link && (
-                    <a
-                        href={proyecto.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={styles.linkButton}
-                    >
-                        {t ? t('proyectos.verProyecto') : 'Ver proyecto'}
-                    </a>
+                {(proyecto.demoLink || proyecto.link) && (
+                    <div className={styles.cardActions}>
+                        {proyecto.demoLink && (
+                            <a
+                                href={proyecto.demoLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.linkButton}
+                            >
+                                {t ? t('proyectos.verDemo') : 'Ver demo'}
+                            </a>
+                        )}
+                        {proyecto.link && (
+                            <a
+                                href={proyecto.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.linkButton}
+                            >
+                                {t ? t('proyectos.verCodigo') : 'Ver código'}
+                            </a>
+                        )}
+                    </div>
                 )}
             </div>
         </article>

@@ -33,7 +33,9 @@ const es = {
         "title": "Proyectos",
         "paraClientes": "Para clientes",
         "personales": "Proyectos personales",
-        "verProyecto": "Ver proyecto"
+        "verProyecto": "Ver proyecto",
+        "verDemo": "Ver demo",
+        "verCodigo": "Ver código"
     },
     "contacto": {
         "title": "Contacto",
@@ -76,7 +78,9 @@ const en = {
         "title": "Projects",
         "paraClientes": "For clients",
         "personales": "Personal projects",
-        "verProyecto": "View project"
+        "verProyecto": "View project",
+        "verDemo": "View demo",
+        "verCodigo": "View code"
     },
     "contacto": {
         "title": "Contact",

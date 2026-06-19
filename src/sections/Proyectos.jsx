@@ -25,6 +25,7 @@ const proyectosClientes = [
         },
         tags: ['React', 'CSS', 'Astro', 'Vercel'],
         link: null,
+        demoLink: '#',
         imagen: [estudioSZ1]
     },
     {
@@ -53,6 +54,7 @@ const proyectosClientes = [
         },
         tags: ['React', 'Node', 'TypeScript', 'PostgreSQL'],
         link: null,
+        demoLink: '#',
         imagen: [proximamente]
     }
 ]
@@ -70,6 +72,7 @@ const proyectosPersonales = [
         },
         tags: ['React','Node.js', 'Express', 'React Router', 'Zustand', ],
         link: 'https://github.com/Ramiro-Zarate/Dev-Jobs-React',
+        demoLink: '#',
         imagenes: [devjobs1, devjobs2, devjobs3]
     },
     {

@@ -61,6 +61,12 @@
     font-weight: 500;
 }
 
+.cardActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
 .linkButton {
     display: inline-flex;
     align-items: center;
