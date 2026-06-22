@@ -1,4 +1,5 @@
 const es = {
+    "cv": "/CV_Ramiro_Zarate_Fullstack.pdf",
     "header": {
         "downloadCV": "Descargar CV"
     },
@@ -45,6 +46,7 @@ const es = {
 }
 
 const en = {
+    "cv": "/CV_Ramiro_Zarate_Fullstack_En.pdf",
     "header": {
         "downloadCV": "Download CV"
     },

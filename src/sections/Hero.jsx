@@ -13,7 +13,7 @@ export function Hero() {
                     <h1 className={styles.heroTitle}>{t('hero.title')}</h1>
                     <p className={styles.heroDescription}>{t('hero.description')}</p>
                     <div className={styles.buttonsContainer}>
-                        <a href="/CV_RamiroZarate.pdf" download className={styles.downloadBtn}>{t('hero.downloadCV')}</a>
+                        <a href={t('cv')} download className={styles.downloadBtn}>{t('hero.downloadCV')}</a>
                         <a href="#about" className={styles.contactButton}>{t('hero.contact')}</a>
                     </div>
                 </div>
