@@ -72,7 +72,7 @@ const proyectosPersonales = [
         },
         tags: ['React','Node.js', 'Express', 'React Router', 'Zustand', ],
         link: 'https://github.com/Ramiro-Zarate/Dev-Jobs-React',
-        demoLink: '#',
+        demoLink: 'https://dev-jobs-react-ten.vercel.app/',
         imagenes: [devjobs1, devjobs2, devjobs3]
     },
     {
