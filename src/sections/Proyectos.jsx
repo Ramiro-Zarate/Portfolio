@@ -25,7 +25,7 @@ const proyectosClientes = [
         },
         tags: ['React', 'CSS', 'Astro', 'Vercel'],
         link: null,
-        demoLink: '#',
+        demoLink: 'https://www.estudiocontablesz.com/',
         imagen: [estudioSZ1]
     },
     {
