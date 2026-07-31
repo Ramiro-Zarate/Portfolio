@@ -1,16 +1,24 @@
-# React + Vite
+# Portfolio — Ramiro Zarate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personal con los proyectos que desarrollé como **Frontend Developer** (React · Astro · TypeScript), incluyendo trabajos para clientes reales en producción.
 
-Currently, two official plugins are available:
+**Sitio live:** https://ramirozarate.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*Personal portfolio showcasing my work as a Frontend Developer, including real client projects running in production.*
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- SPA en **React + Vite** con CSS Modules
+- **Bilingüe** (ES/EN) con Context propio de i18n
+- Sección de proyectos para clientes y personales con carrusel de imágenes y modal
+- Descarga de CV en PDF (ES/EN)
+- Deploy en Vercel
 
-## Expanding the ESLint configuration
+## Desarrollo local
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Build de producción: `npm run build` → `dist/`

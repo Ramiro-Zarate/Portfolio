@@ -7,8 +7,14 @@ import devjobs2 from '../assets/proyectos/devjobs2.webp'
 import devjobs3 from '../assets/proyectos/devjobs3.webp'
 import challenge1 from '../assets/proyectos/challenge1.webp'
 import challenge2 from '../assets/proyectos/challenge2.webp'
-import estudioSZ1 from '../assets/proyectos/estudioSZ1.png'
+import estudioSZ1 from '../assets/proyectos/estudioSZ1.webp'
+import estudioSZ2 from '../assets/proyectos/estudioSZ2.webp'
+import estudioSZ3 from '../assets/proyectos/estudioSZ3.webp' 
 import automatizacion1 from '../assets/proyectos/automatizacion1.webp' 
+import vakstore1 from '../assets/proyectos/vakstore1.webp'
+import vakstore2 from '../assets/proyectos/vakstore2.webp'
+import vakstore3 from '../assets/proyectos/vakstore3.webp'
+import vakstore4 from '../assets/proyectos/vakstore4.webp'
 import proximamente from '../assets/proyectos/proximamente.webp'
 
 
@@ -20,13 +26,13 @@ const proyectosClientes = [
             en: 'Landing Page - Accounting Firm SZ'
         },
         descripcion: {
-            es: 'Landing page institucional diseñada para maximizar la visibilidad online y la captación de clientes. Desarrollada con React y Astro, optimizada para SEO y rendimiento. Implementación de diseño responsivo para una experiencia fluida en dispositivos móviles.',
-            en: 'Institutional landing page designed to maximize online visibility and lead generation. Developed with React and Astro, optimized for SEO and performance. Responsive design implementation for a smooth experience on mobile devices.'
+            es: 'Landing page institucional diseñada para maximizar la visibilidad online y la captación de clientes. Desarrollada con React y Astro, optimizada para SEO y rendimiento responsivo. Integración con Google Analytics 4 (GA4) para el seguimiento de tráfico, comportamiento de usuarios y medición de conversiones.',
+            en: 'Institutional landing page designed to maximize online visibility and lead generation. Developed with React and Astro, optimized for SEO and responsive performance. Google Analytics 4 (GA4) integration for traffic tracking, user behavior analysis, and conversion measurement.'
         },
         tags: ['React', 'CSS', 'Astro', 'Vercel'],
         link: null,
         demoLink: 'https://www.estudiocontablesz.com/',
-        imagen: [estudioSZ1]
+        imagenes: [estudioSZ1, estudioSZ2, estudioSZ3]
     },
     {
         id: 2,
@@ -35,8 +41,8 @@ const proyectosClientes = [
             en: 'Automation - Accounting Firm SZ'
         },
         descripcion: {
-            es: 'Solución de software personalizada para la automatización de tareas administrativas y fiscales, eliminando procesos manuales repetitivos. Integración con APIs de ARCA usando librerías Playwright y Pandas. Interfaz gráfica con CustomTkinter.',
-            en: 'Custom software solution for automating administrative and tax tasks, eliminating repetitive manual processes. Integration with ARCA APIs using Playwright and Pandas libraries. Graphic interface with CustomTkinter.'
+            es: 'Solución de software personalizada para la automatización de tareas administrativas y fiscales, eliminando procesos manuales repetitivos. Integración con APIs de ARCA usando librerías Playwright y Pandas. Interfaz gráfica con CustomTkinter. Redujo el tiempo de procesamiento un 35% y se usa a diario en el estudio.',
+            en: 'Custom software solution for automating administrative and tax tasks, eliminating repetitive manual processes. Integration with ARCA APIs using Playwright and Pandas libraries. Graphic interface with CustomTkinter. Cut processing time by 35% and is in daily use at the firm.'
         },
         tags: ['Python', 'Playwright', 'Pandas', 'CustomTkinter'],
         link: null,
@@ -45,17 +51,18 @@ const proyectosClientes = [
     {
         id: 3,
         titulo: {
-            es: 'E-commerce - Vak Store (En desarrollo)',
-            en: 'E-commerce - Vak Store (In development)'
+            es: 'E-commerce - Vak Store',
+            en: 'E-commerce - Vak Store'
         },
         descripcion: {
-            es: 'Tienda online escalable para la comercialización de indumentaria deportiva, con foco en una experiencia de compra fluida. Desarrollo de un catálogo dinámico y gestión de base de datos para control de stock en tiempo real. Actualmente en fase de integración de pasarela de pagos.',
-            en: 'Scalable online store for sportswear commercialization, focused on a smooth shopping experience. Dynamic catalog development and database management for real-time stock control. Currently in the payment gateway integration phase.'
+            es: 'Plataforma e-commerce en funcionamiento para marca de indumentaria deportiva. Incluye catálogo con filtrado dinámico, gestión de usuarios (autenticación/login) y carrito con control de stock en tiempo real. Checkout integrado con Mercado Pago (webhooks y reembolsos automáticos) y logística automatizada con Correo Argentino (cotización por CP, generación de etiquetas e historial de envíos). Implementación de Google Analytics 4 (GA4) para analítica de ventas y embudo de conversión.',
+            en: 'Fully operational e-commerce platform for a sportswear brand. Features dynamic catalog filtering, user authentication/login, and real-time inventory management. Full Mercado Pago integration (webhooks, automatic refunds) and automated shipping via Correo Argentino (postal code calculation, label printing, order tracking). Google Analytics 4 (GA4) integration for sales analytics and conversion funnel tracking.'
+
         },
-        tags: ['React', 'Node', 'TypeScript', 'PostgreSQL'],
-        link: null,
-        demoLink: '#',
-        imagen: [proximamente]
+        tags: ['Astro', 'React', 'TypeScript', 'Supabase', 'Mercado Pago'],
+        link: 'https://github.com/Ramiro-Zarate/VakStore',
+        demoLink: 'https://vak-store.vercel.app',
+        imagenes: [vakstore1, vakstore2, vakstore3, vakstore4]
     }
 ]
 
@@ -100,7 +107,7 @@ const proyectosPersonales = [
             en: 'Real-time data analysis tool designed to process and visualize official Formula 1 telemetry, with specific focus on Franco Colapinto performance. Integration with telemetry APIs for extracting speed, gear, battery usage and lap time metrics. Interactive dashboard development using React for data visualization, with dynamic charts and customizable filters for detailed driver performance analysis.'
         },
         tags: ['Python', 'Pandas', 'React'],
-        link: 'https://github.com',
+        link: null,
         imagen: [proximamente]
     }
 ]
