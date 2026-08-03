@@ -61,7 +61,7 @@ const proyectosClientes = [
         },
         tags: ['Astro', 'React', 'TypeScript', 'Supabase', 'Mercado Pago'],
         link: 'https://github.com/Ramiro-Zarate/VakStore',
-        demoLink: 'https://vak-store.vercel.app',
+        demoLink: 'https://vakstoree.com',
         imagenes: [vakstore1, vakstore2, vakstore3, vakstore4]
     }
 ]
