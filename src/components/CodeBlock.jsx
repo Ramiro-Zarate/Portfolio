@@ -3,12 +3,6 @@ import styles from './CodeBlock.module.css'
 export function CodeBlock() {
     return (
         <div className={styles.codeWindow}>
-            <div className={styles.codeHeader}>
-                <span className={`${styles.dot} ${styles.dotRed}`} />
-                <span className={`${styles.dot} ${styles.dotYellow}`} />
-                <span className={`${styles.dot} ${styles.dotGreen}`} />
-                <span className={styles.codeTitle}>~/ramiro-zarate.js</span>
-            </div>
             <pre className={styles.codeBody}>
                 <code>
                     <span className={styles.comment}>{'// who am i?'}</span>{'\n'}
