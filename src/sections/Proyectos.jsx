@@ -22,17 +22,18 @@ const proyectosClientes = [
     {
         id: 1,
         titulo: {
-            es: 'Landing Page - Estudio Contable SZ',
-            en: 'Landing Page - Accounting Firm SZ'
+            es: 'E-commerce - Vak Store',
+            en: 'E-commerce - Vak Store'
         },
         descripcion: {
-            es: 'Landing page institucional diseñada para maximizar la visibilidad online y la captación de clientes. Desarrollada con React y Astro, optimizada para SEO y rendimiento responsivo. Integración con Google Analytics 4 (GA4) para el seguimiento de tráfico, comportamiento de usuarios y medición de conversiones.',
-            en: 'Institutional landing page designed to maximize online visibility and lead generation. Developed with React and Astro, optimized for SEO and responsive performance. Google Analytics 4 (GA4) integration for traffic tracking, user behavior analysis, and conversion measurement.'
+            es: 'Plataforma e-commerce en funcionamiento para marca de indumentaria deportiva. Incluye catálogo con filtrado dinámico, gestión de usuarios (autenticación/login) y carrito con control de stock en tiempo real. Checkout integrado con Mercado Pago (webhooks y reembolsos automáticos) y logística automatizada con Correo Argentino (cotización por CP, generación de etiquetas e historial de envíos). Implementación de Google Analytics 4 (GA4) para analítica de ventas y embudo de conversión.',
+            en: 'Fully operational e-commerce platform for a sportswear brand. Features dynamic catalog filtering, user authentication/login, and real-time inventory management. Full Mercado Pago integration (webhooks, automatic refunds) and automated shipping via Correo Argentino (postal code calculation, label printing, order tracking). Google Analytics 4 (GA4) integration for sales analytics and conversion funnel tracking.'
+
         },
-        tags: ['React', 'CSS', 'Astro', 'Vercel'],
-        link: null,
-        demoLink: 'https://www.estudiocontablesz.com/',
-        imagenes: [estudioSZ1, estudioSZ2, estudioSZ3]
+        tags: ['Astro', 'React', 'TypeScript', 'Supabase', 'Mercado Pago'],
+        link: 'https://github.com/Ramiro-Zarate/VakStore',
+        demoLink: 'https://vakstoree.com',
+        imagenes: [vakstore1, vakstore2, vakstore3, vakstore4]
     },
     {
         id: 2,
@@ -51,18 +52,32 @@ const proyectosClientes = [
     {
         id: 3,
         titulo: {
-            es: 'E-commerce - Vak Store',
-            en: 'E-commerce - Vak Store'
+            es: 'Sistema de Punto de Venta',
+            en: 'Point of Sale System'
         },
         descripcion: {
-            es: 'Plataforma e-commerce en funcionamiento para marca de indumentaria deportiva. Incluye catálogo con filtrado dinámico, gestión de usuarios (autenticación/login) y carrito con control de stock en tiempo real. Checkout integrado con Mercado Pago (webhooks y reembolsos automáticos) y logística automatizada con Correo Argentino (cotización por CP, generación de etiquetas e historial de envíos). Implementación de Google Analytics 4 (GA4) para analítica de ventas y embudo de conversión.',
-            en: 'Fully operational e-commerce platform for a sportswear brand. Features dynamic catalog filtering, user authentication/login, and real-time inventory management. Full Mercado Pago integration (webhooks, automatic refunds) and automated shipping via Correo Argentino (postal code calculation, label printing, order tracking). Google Analytics 4 (GA4) integration for sales analytics and conversion funnel tracking.'
-
+            es: 'Sistema de punto de venta para un comercio, en uso diario. Control de stock en tiempo real, registro de ventas y reportes, con integración de lector de código de barras y ticketeadora.',
+            en: 'Point of sale system for a shop, in daily use. Real-time stock control, sales tracking and reports, with barcode scanner and receipt printer integration.'
         },
-        tags: ['Astro', 'React', 'TypeScript', 'Supabase', 'Mercado Pago'],
-        link: 'https://github.com/Ramiro-Zarate/VakStore',
-        demoLink: 'https://vakstoree.com',
-        imagenes: [vakstore1, vakstore2, vakstore3, vakstore4]
+        tags: ['React', 'TypeScript', 'PostgreSQL', 'Prisma'],
+        link: null,
+        demoLink: null,
+        imagen: [proximamente]
+    },
+    {
+        id: 4,
+        titulo: {
+            es: 'Landing Page - Estudio Contable SZ',
+            en: 'Landing Page - Accounting Firm SZ'
+        },
+        descripcion: {
+            es: 'Landing page institucional diseñada para maximizar la visibilidad online y la captación de clientes. Desarrollada con React y Astro, optimizada para SEO y rendimiento responsivo. Integración con Google Analytics 4 (GA4) para el seguimiento de tráfico, comportamiento de usuarios y medición de conversiones.',
+            en: 'Institutional landing page designed to maximize online visibility and lead generation. Developed with React and Astro, optimized for SEO and responsive performance. Google Analytics 4 (GA4) integration for traffic tracking, user behavior analysis, and conversion measurement.'
+        },
+        tags: ['React', 'CSS', 'Astro', 'Vercel'],
+        link: null,
+        demoLink: 'https://www.estudiocontablesz.com/',
+        imagenes: [estudioSZ1, estudioSZ2, estudioSZ3]
     }
 ]
 
@@ -116,13 +131,11 @@ export function Proyectos() {
     const { language, t } = useLanguage()
     const [modalData, setModalData] = useState({ imagenes: [], index: 0, titulo: '' })
 
-    const handleImageClick = (imagenes, index) => {
+    const handleImageClick = (imagenes, index, titulo) => {
         setModalData({
             imagenes,
             index,
-            titulo: proyectosPersonales.find(p => p.imagenes?.includes(imagenes[0]))?.titulo[language] ||
-                    proyectosClientes.find(p => p.imagen === imagenes[0])?.titulo[language] ||
-                    ''
+            titulo: titulo?.[language] || ''
         })
     }
 

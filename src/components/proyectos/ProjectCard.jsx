@@ -7,7 +7,7 @@ export function ProjectCard({ proyecto, language, onImageClick, t }) {
     const descripcion = proyecto.descripcion[language] || proyecto.descripcion.es
 
     const handleClick = (imagen, index) => {
-        onImageClick(proyecto.imagenes || [proyecto.imagen], index)
+        onImageClick(proyecto.imagenes || [proyecto.imagen], index, proyecto.titulo)
     }
 
     return (
@@ -24,7 +24,7 @@ export function ProjectCard({ proyecto, language, onImageClick, t }) {
                         src={proyecto.imagen}
                         alt={titulo}
                         loading="lazy"
-                        onClick={() => onImageClick([proyecto.imagen], 0)}
+                        onClick={() => onImageClick([proyecto.imagen], 0, proyecto.titulo)}
                     />
                 )}
             </div>
